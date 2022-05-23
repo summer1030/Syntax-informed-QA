@@ -6,7 +6,9 @@ The environment and dependent libraries can be checked in requirement.txt
 
 ## Do parsing
 
-    ** Have provided the parsed results (con_parsed_dev.json and con_parsed_train.json).
+    ** Have provided the parsed results 
+      - con_parsed_dev.json, con_parsed_train.json
+      - dep_parsed_dev.json, dep_parsed_train.json
     ** Can skip this step and forward to the next step.
 
     ./utils/ConstituencyParse.py for consistuency parsing
