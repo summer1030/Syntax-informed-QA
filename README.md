@@ -98,7 +98,7 @@ The environment and dependent libraries can be checked in requirement.txt
 
     bash ./run_eval.sh
     
-    (Need to set --do_train to initialize the graph)
+    (Set --do_train to initialize the graph)
     
     python3 eval_squad_hgt.py --model_type bert \
                --graph_type dep \
