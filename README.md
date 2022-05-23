@@ -5,13 +5,28 @@ The code for the work "Syntax-informed Question Answering with Heterogeneous Gra
 The environment and dependent libraries can be checked in requirement.txt
 
 ## Do parsing
-
-    ** Have provided the parsed results 
-      - con_parsed_dev.json, con_parsed_train.json
-      - dep_parsed_dev.json, dep_parsed_train.json
+    
+   For constituency parsing, we use the parser `Berkeley Neural Parser' from spaCy.
+   More details about the parser can be found here,
+   https://spacy.io/universe/project/self-attentive-parser,
+   https://github.com/nikitakit/self-attentive-parser.  
+   
+    ** Have provided the parsed results.
     ** Can skip this step and forward to the next step.
+      - con_parsed_dev.json, con_parsed_train.json
 
     ./utils/ConstituencyParse.py for consistuency parsing
+
+   
+   
+   For dependency parsing, we use the parser `Biaffine Parser' from SuPar.
+   More details about the parser can be found here, 
+   https://github.com/yzhangcs/parser.
+   
+    ** Have provided the parsed results 
+    ** Can skip this step and forward to the next step
+      - dep_parsed_dev.json, dep_parsed_train.json
+
     ./utils/DependencyParse.py for dependency parsing
 
 
