@@ -8,3 +8,7 @@ Please download the intermediate data files [here](https://drive.google.com/file
 - dep_parsed_dev.json: dependency parsed results for development set
 - dep_parsed_dev.json: dependency parsed results for training set
 ```
+
+tag_embeds_dict: The key is type of constituent, e.g., NP (noun phrase) or VP (verb phrase). The value is the intialized tensor for each type of constituent.
+
+dep_rels_tag_list.txt: show all dependency relationships 
