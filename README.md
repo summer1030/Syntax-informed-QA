@@ -70,14 +70,14 @@ The environment and dependent libraries can be checked in requirement.txt
                 --version_2_with_negative \
                 --max_seq_length 384 \
                 --threads 50\
-
+    
 ## Evaluate a saved checkpoint
 
-  bash ./run_eval.sh
-   
-  Need to set --do_train to initialize the graph 
-  
-  python3 eval_squad_hgt.py --model_type bert \
+    bash ./run_eval.sh
+    
+    (Need to set --do_train to initialize the graph)
+    
+    python3 eval_squad_hgt.py --model_type bert \
                --graph_type dep \
                --model_name_or_path bert-base-cased \
                --data_dir ./data_dep/ \
@@ -99,5 +99,3 @@ The environment and dependent libraries can be checked in requirement.txt
                --version_2_with_negative \
                --max_seq_length 384 \
                --threads 10\
-      
-##  
