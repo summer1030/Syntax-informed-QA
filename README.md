@@ -2,6 +2,12 @@
 
 The code for the work "Syntax-informed Question Answering with Heterogeneous Graph Transformer".
 
+```
+* BERT_HGT_CON: Build constituency graph on top of backbone
+* BERT_HGT_DEP: Build dependency graph on top of backbone
+* BERT_HGT_CON_AND_DEP: Build constituency and dependency graph on top of backbone
+```
+
 The environment and dependent libraries can be checked in requirement.txt
 
 ## Do parsing
