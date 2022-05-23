@@ -38,30 +38,28 @@ The environment and dependent libraries can be checked in requirement.txt
 
 ## Process constituency parsing results to get the graphs
 
-    _______________________________________
+### Building consistuency graphs:  
 
-    For building consistuency graphs:
+```
+#### for training data
+python ConGraphBuilding.py --data_split train --save_path ../data/squad_files/constituency_graphs/
 
-    ## for training data
-    python ConGraphBuilding.py --data_split train --save_path ../data/squad_files/constituency_graphs/
+#### for development data
+python ConGraphBuilding.py --data_split dev --save_path ../data/squad_files/constituency_graphs/
 
-    ## for development data
-    python ConGraphBuilding.py --data_split dev --save_path ../data/squad_files/constituency_graphs/
+the generated files are saved to `save_path'
+```
 
-    the generated files are saved to `save_path'
-    _______________________________________
+### Building dependency graphs: 
+```
+#### for training data
+python DepGraphBuilding.py --data_split train --save_path ../data/squad_files/dependency_graphs/
 
-    For building dependency graphs:
+#### for development data
+python DepGraphBuilding.py --data_split dev --save_path ../data/squad_files/dependency_graphs/
 
-    ## for training data
-    python DepGraphBuilding.py --data_split train --save_path ../data/squad_files/dependency_graphs/
-
-    ## for development data
-    python DepGraphBuilding.py --data_split dev --save_path ../data/squad_files/dependency_graphs/
-
-    the generated files are saved to `save_path'
-
-    _______________________________________
+the generated files are saved to `save_path'
+```
 
 
 ## Train the model (use single gpu)
